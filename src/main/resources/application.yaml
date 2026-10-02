@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:paymentdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+  application:
+    name: payment-test
+
+server:
+  port: 8080
+
+portone:
+  store-id: store-e067ece3-a470-475e-be2e-1e8f5474018b
+  channel-key: channel-key-b20bef71-5ea1-4757-b948-a0d43d1b792b
+  api-secret: 0f0OreDNeiLNUZTVfiK35K249L6cvklYjnayNIXwAa3UStgu6KV31QWx2KhzfxECpeToYsqzll9KsB0E
